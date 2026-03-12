@@ -7,7 +7,7 @@
 <p align="center">
   <img src="preview One.jpg" width="30%" />
   <img src="perviewTwo.jpg" width="30%" />
-  <img src="previewThree.jpg" width="30%" />
+  <img src="perviewThree.jpg" width="30%" />
 </p>
 
 
