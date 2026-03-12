@@ -5,8 +5,8 @@
 ​## App Preview
 
 <p align="center">
-  <img src="previewOne.jpg" width="30%" />
-  <img src="previewTwo.jpg" width="30%" />
+  <img src="preview One.jpg" width="30%" />
+  <img src="perviewTwo.jpg" width="30%" />
   <img src="previewThree.jpg" width="30%" />
 </p>
 
