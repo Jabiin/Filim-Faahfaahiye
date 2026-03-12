@@ -18,11 +18,12 @@
 ​Android Studio or VS Code
 ​An Android Emulator or physical device
 ​Installation & Execution
-## Clone the repository
+### Clone the repository
 
-## Get dependencies:
+### Get dependencies:
  ` flutter pub get`
 
- ## Run the app:
+ ### Run the app:
  If you have your emulator running, just execute:
+ 
  ` flutter run `
