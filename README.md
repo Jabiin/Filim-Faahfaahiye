@@ -10,7 +10,7 @@
   <img src="perviewThree.jpg" width="30%" />
 </p>
 
-[![Watch the Demo](https://img.youtube.com/vi/https://youtu.be/qPCuF2a3QHM_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=https://youtu.be/qPCuF2a3QHM)
+[![Watch the Demo](https://img.youtube.com/vi/qPCuF2a3QHM/maxresdefault.jpg)](https://www.youtube.com/watch?v=qPCuF2a3QHM)
 
 
 # How to Run
