@@ -51,4 +51,5 @@ lib/keys.dart
 /.pub-cache/
 /.pub/
 
+keys.json
 .env

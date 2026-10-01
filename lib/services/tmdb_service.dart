@@ -1,10 +1,9 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import '../models/movie.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
+static const String _apiKey = String.fromEnvironment('TMDB_KEY');
 
 class TmdbService {
-  static final String _apiKey = dotenv.env['TMDB_KEY'] ?? '';
   static const String _baseUrl = 'https://api.themoviedb.org/3';
 
   Future<List<Movie>> searchMovies(String query) async {
