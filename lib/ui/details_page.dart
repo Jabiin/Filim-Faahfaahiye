@@ -12,6 +12,26 @@ class DetailsPage extends StatefulWidget {
   State<DetailsPage> createState() => _DetailsPageState();
 }
 
+  late Future<Map<String, dynamic>> _movieDetails;
+  late Future<String> _summary;
+
+  @override
+  void initState() {
+    super.initState();
+    _movieDetails = _tmdbService.getMovieDetails(widget.movieId);
+    _summary = _loadSummary();
+  }
+
+  Future<String> _loadSummary() async {
+    try {
+      final details = await _movieDetails;
+      final overview = (details['overview'] ?? '') as String;
+      return await _aiService.translateToSomali(widget.movieId, overview);
+    } catch (_) {
+      return "Turjumaad lama helin.";
+    }
+  }
+
 class _DetailsPageState extends State<DetailsPage> {
   final TmdbService _tmdbService = TmdbService();
   final AiService _aiService = AiService();
@@ -93,7 +113,7 @@ class _DetailsPageState extends State<DetailsPage> {
                 ),
                 const SizedBox(height: 10),
                 FutureBuilder<String>(
-                  future: _aiService.translateToSomali(overview),
+                  future: _summary,
                   builder: (context, aiSnapshot) {
                     if (aiSnapshot.connectionState == ConnectionState.waiting) {
                       return const Text(
