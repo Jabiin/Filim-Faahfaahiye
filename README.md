@@ -13,19 +13,11 @@
 [Demo Video Here](https://youtu.be/qPCuF2a3QHM)
 
 
-# How to Run
-​ you can get it running locally by following these steps:
-​## Prerequisites
-​Flutter SDK installed
-​Android Studio or VS Code
-​An Android Emulator or physical device
-​Installation & Execution
-### Clone the repository
+## Try the App (no setup needed)
 
-### Get dependencies:
- ` flutter pub get`
+1. Open the **Actions** tab of this repository.
+2. Click the latest successful **Build APK** run.
+3. Download the `filim-faahfaahiye-apk` artifact (requires a GitHub login), unzip it, and install `app-release.apk` on an Android phone (you may need to allow "install unknown apps").
 
- ### Run the app:
- If you have your emulator running, just execute:
- 
- ` flutter run `
+The APK is built automatically by GitHub Actions from this code. API keys are stored as GitHub Secrets and are not in the repository.
+
