@@ -12,6 +12,9 @@ class DetailsPage extends StatefulWidget {
   State<DetailsPage> createState() => _DetailsPageState();
 }
 
+ class _DetailsPageState extends State<DetailsPage> {
+  final TmdbService _tmdbService = TmdbService();
+  final AiService _aiService = AiService();
   late Future<Map<String, dynamic>> _movieDetails;
   late Future<String> _summary;
 
@@ -30,17 +33,6 @@ class DetailsPage extends StatefulWidget {
     } catch (_) {
       return "Turjumaad lama helin.";
     }
-  }
-
-class _DetailsPageState extends State<DetailsPage> {
-  final TmdbService _tmdbService = TmdbService();
-  final AiService _aiService = AiService();
-  late Future<Map<String, dynamic>> _movieDetails;
-
-  @override
-  void initState() {
-    super.initState();
-    _movieDetails = _tmdbService.getMovieDetails(widget.movieId);
   }
 
   @override
